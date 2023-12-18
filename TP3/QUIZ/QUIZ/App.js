@@ -1,26 +1,28 @@
 /**
-    * @description      : 
-    * @author           : belgacem
-    * @group            : 
-    * @created          : 29/11/2023 - 09:00:52
-    * 
-    * MODIFICATION LOG
-    * - Version         : 1.0.0
-    * - Date            : 29/11/2023
-    * - Author          : belgacem
-    * - Modification    : 
+ * @description      : Application principale avec un design amélioré
+ * @author           : belgacem
+ * @group            : 
+ * @created          : 18/12/2023 - 22:39:44
+ * 
+ * MODIFICATION LOG
+ * - Version         : 1.1.0
+ * - Date            : 18/12/2023
+ * - Author          : belgacem
+ * - Modification    : Amélioration du design
 **/
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+import React from 'react';
+import { SafeAreaView, StatusBar, StyleSheet, View } from 'react-native';
 import Quiz from './component/Quiz';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-   
-      <StatusBar style="auto" />
-      <Quiz/>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <StatusBar barStyle="dark-content" backgroundColor="#fff" />
+      <View style={styles.content}>
+        <Quiz />
+      </View>
+    </SafeAreaView>
   );
 }
 
@@ -30,5 +32,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  content: {
+    flex: 1,
+    width: '80%', // Ajustez selon vos besoins
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginVertical: 20,
   },
 });
