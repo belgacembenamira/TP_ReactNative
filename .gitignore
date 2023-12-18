@@ -1,0 +1,35 @@
+# Dependency directories
+node_modules/
+
+# iOS
+ios/build/
+ios/Pods/
+ios/*.xcworkspace/
+ios/*.xcodeproj/
+
+# Android
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+
+# Logs
+logs/
+*.log
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
