@@ -1,0 +1,14 @@
+{
+  "name": "tp6",
+  "version": "1.0.0",
+  "description": "compte rendu tp6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "belgacem ben amira",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
